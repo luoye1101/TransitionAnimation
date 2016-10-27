@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vn3-Gh-Ve8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XhI-wH-eyd">
+            <objects>
+                <viewController id="vn3-Gh-Ve8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LDY-4e-2d9"/>
+                        <viewControllerLayoutGuide type="bottom" id="X6Z-Rn-MBe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vEu-gV-58J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVD-s9-wDN">
+                                <state key="normal" title="开始动画"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0mc-ot-5FI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9747446381" blue="0.38150235560000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WVD-s9-wDN" firstAttribute="centerX" secondItem="vEu-gV-58J" secondAttribute="centerX" id="Fac-f1-z31"/>
+                            <constraint firstItem="WVD-s9-wDN" firstAttribute="centerY" secondItem="vEu-gV-58J" secondAttribute="centerY" id="YK2-fB-skN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxy-a7-yJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-569" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="5C9-cl-g9S"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5C9-cl-g9S" secondAttribute="bottom" id="cfo-VR-Y3X"/>
+                            <constraint firstItem="5C9-cl-g9S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jlX-vM-HYA"/>
+                            <constraint firstItem="5C9-cl-g9S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sau-fa-CrQ"/>
+                            <constraint firstAttribute="trailing" secondItem="5C9-cl-g9S" secondAttribute="trailing" id="uWZ-d7-tPd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="timg" width="1440" height="2560"/>
+    </resources>
+</document>
